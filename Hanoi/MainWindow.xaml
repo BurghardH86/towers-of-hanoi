@@ -1,0 +1,31 @@
+﻿<Window x:Class="Hanoi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Towers of Hanoi" Height="400" Width="660">
+    <Canvas>
+        <Rectangle Name="r_Large0"  Fill="Blue" Canvas.Left="50" Canvas.Top="300" Width="150" Height="30" Panel.ZIndex="1" />
+        <Rectangle Name="r_MidLarge1"  Fill="Blue" Canvas.Left="65" Canvas.Top="260" Width="120" Height="30" Panel.ZIndex="1"/>
+        <Rectangle Name="r_Mid2"  Fill="Blue" Canvas.Left="80" Canvas.Top="220" Width="90" Height="30" Panel.ZIndex="1"/>
+        <Rectangle Name="r_Small3"  Fill="Blue" Canvas.Left="95" Canvas.Top="180" Width="60" Height="30" Panel.ZIndex="1"/>
+        <Rectangle Name="r_Small4"  Fill="Blue" Canvas.Left="110" Canvas.Top="140" Width="30" Height="30" Panel.ZIndex="1"/>
+        <Line X1="0" X2="650" Y1="0" Y2="0" Canvas.Top="340" Height="5" Width="650" StrokeThickness="2" Stroke="Black" Panel.ZIndex="0"/>
+        <Line X1="0" X2="0" Y1="0" Y2="-250" Canvas.Top="340" Canvas.Left="125" Height="5" Width="2" StrokeThickness="2" Stroke="Black" Panel.ZIndex="0"/>
+        <Line X1="0" X2="0" Y1="0" Y2="-250" Canvas.Top="340" Canvas.Left="345" Height="5" Width="2" StrokeThickness="2" Stroke="Black" Panel.ZIndex="0" />
+        <Line X1="0" X2="0" Y1="0" Y2="-250" Canvas.Top="340" Canvas.Left="565" Height="5" Width="2" StrokeThickness="2" Stroke="Black" Panel.ZIndex="0" />
+
+        <Label Content="Start Stack" Canvas.Left="95" Canvas.Top="340"/>
+        <Label Content="Support Stack" Canvas.Left="305" Canvas.Top="340"/>
+        <Label Content="Destination Stack" Canvas.Left="515" Canvas.Top="340"/>
+        <Button Content="Initialize" Name="B_initialize"  Width="75" Canvas.Left="10" Canvas.Top="10" Click="B_Initialize_Click"/>
+        <Button Content="Support" Name="B_start_support" Width="70" Canvas.Left="126" Canvas.Top="58" Click="B_Start_Support_Click"/>
+        <Button Content="Destination" Name="B_support_Destination" Width="70" Canvas.Left="349" Canvas.Top="58" Click="B_Support_Destination_Click"/>
+        <Button Content="Start" Name="B_support_start" Width="70" Canvas.Left="275" Canvas.Top="58" Click="B_Support_Start_Click"/>
+        <Button Content="Support" Name="B_destination_support" Width="70" Canvas.Left="493" Canvas.Top="58" Click="B_Destination_Support_Click"/>
+        <Button Content="Hanoi" x:Name="B_hanoi"  Width="75" Canvas.Left="100" Canvas.Top="10" Click="B_Hanoi_Click"/>
+        <Button Content="Destination" x:Name="B_start_destination" Width="70" Canvas.Left="52" Canvas.Top="58" Click="B_Start_Destination_Click"/>
+        <Button Content="Start" x:Name="B_destination_start" Width="70" Canvas.Left="566" Canvas.Top="58" Click="B_Destination_Start_Click"/>
+        <Label Content="Choose Target Stack:" Canvas.Left="63" Canvas.Top="32"/>
+        <Label Content="Choose Target Stack:" Canvas.Left="287" Canvas.Top="32"/>
+        <Label Content="Choose Target Stack:" Canvas.Left="503" Canvas.Top="32"/>
+    </Canvas>
+</Window>
